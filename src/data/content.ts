@@ -172,7 +172,7 @@ export const content: SiteContent = {
     { name: 'Docker', icon: 'SiDocker', category: 'Tools' },
     { name: 'Linux', icon: 'SiLinux', category: 'Tools' },
     { name: 'Jupyter Notebook', icon: 'SiJupyter', category: 'Tools' },
-    { name: 'VS Code', icon: 'SiVisualstudiocode', category: 'Tools' },
+    { name: 'VS Code', icon: 'VscVscode', category: 'Tools' },
     { name: 'Vercel', icon: 'SiVercel', category: 'Tools' },
     { name: 'Render', icon: 'SiRender', category: 'Tools' },
     { name: 'Streamlit', icon: 'SiStreamlit', category: 'Tools' },
