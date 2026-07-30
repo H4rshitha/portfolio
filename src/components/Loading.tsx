@@ -13,7 +13,13 @@ export default function Loading() {
   useEffect(() => {
     const release = registerTask();
     const timer = window.setTimeout(release, MIN_DISPLAY_MS);
-    return () => window.clearTimeout(timer);
+    return () => {
+      // If this effect tears down before the timer fires (e.g. React
+      // StrictMode's dev-only double-invoke), release() ourselves so the
+      // task doesn't stay registered forever and isLoading never resolves.
+      window.clearTimeout(timer);
+      release();
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
