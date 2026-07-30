@@ -1,0 +1,20 @@
+.footer {
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+
+.footer__inner {
+  max-width: var(--section-max-width);
+  margin-inline: auto;
+  padding: 28px var(--section-padding-inline);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer__copy {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
